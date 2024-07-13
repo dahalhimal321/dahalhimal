@@ -291,8 +291,8 @@ button.btn {
 button.btn:hover {
   color: white;
 }
-.row.contact-row {
-  display: flex !important ;
+.contact-row {
+  display: flex;
   flex-direction: row;
 }
 .column-left {
@@ -409,15 +409,26 @@ form .btn {
   .column-left {
     flex-basis: 100%;
   }
-  .column-right-m {
+  .column-right {
     flex-basis: 100%;
     margin-top: 10px;
+
+
   }
 
-  .row .contact-row {
+  .contact-row {
     display: flex;
     flex-direction: column;
   }
+
+  .contact-row .column-left{
+
+    width: 100%;
+  }
+  .column-right form {
+    width: 100%;
+  }
+
   nav ul .fa-regular.fa-circle-xmark {
     display: block;
     position: absolute;
@@ -432,11 +443,11 @@ form .btn {
     background: #ff004f;
     position: fixed;
     top: 0;
-    right: -130px;
-    width: 2%;
+    right: -250px;
+    width: 250px;
     height: 100vh;
     padding-top: 50px;
-    z-index: -2px;
+    z-index: -2;
     transition: right 0.5s;
   }
   nav ul li {
