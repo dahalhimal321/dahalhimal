@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>personal portfolio of Himal Dahal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+</head>
+
+<body>
+  <div class="">
+    <nav class="navbar container">
+      <img src="images/logo1.png" alt="logo" class="logo" />
+      <ul id="side-menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">portfolio</a></li>
+        <li><a href="#contact">contact</a></li>
+        <i class="fa-regular fa-circle-xmark" onclick="closemenu()"></i>
+      </ul>
+      <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+    </nav>
+    <div id="header">
+      <div class="container">
+        <div class="header-text">
+          <p>Front end developer</p>
+          <h1>
+            Hi, I am <span class="namemy">&nbsp;Himal Dahal </span> <br />
+            from Nepal
+          </h1>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- about section -->
+  <div id="about">
+    <div class="container">
+      <div class="about-row">
+        <div class="col-1">
+          <img src="images/himal.jpg" />
+        </div>
+        <div class="col-2">
+          <h1 class="subtitle">About Me</h1>
+          <p>
+            My self Himal Dahal an Electronics and communication engineer
+            searching a carrer in the fileld of programming with the
+            wilingness of becoming a good developer in future
+          </p>
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('Skills')">
+              Skills
+            </p>
+            <p class="tab-links" onclick="opentab('Experience')">
+              Experience
+            </p>
+            <p class="tab-links" onclick="opentab('Education')">Education</p>
+          </div>
+          <div class="tab-content active-element" id="Skills">
+            <ul>
+              <li><span>UI/UX </span><br />Web interfaces</li>
+              <li>
+                <span>Mobile app development </span><br />Desktop application
+                development
+              </li>
+              <li><span>PCB designing </span><br />3D Modeling</li>
+            </ul>
+          </div>
+          <div class="tab-content" id="Experience">
+            <ul>
+              <li>
+                <span>AI/ML Engineer </span><br />core Electronics PCB
+                designer
+              </li>
+              <li>
+                <span>Wireless back office engineer </span><br />content
+                writer
+              </li>
+            </ul>
+          </div>
+          <div class="tab-content" id="Education">
+            <ul>
+              <li><span>2071</span> <br>SLC from Nepal Board </li>
+              <li><span>2073</span><br>+2 from Nasa international and HSEB</li>
+              <li>
+                <span>2079</span><br>Bachelors in Electronics and communication
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--my services  -->
+  <div id="services">
+    <div class="container">
+      <h1 class="subtitle">My Services</h1>
+      <div class="services-list">
+        <div>
+          <i class="fa-brands fa-r-project"></i>
+          <h2>Project Management</h2>
+          <p>Manage all the projects which are currently running</p>
+          <a href="#">Learn More</a>
+        </div>
+        <div>
+          <i class="fa-brands fa-web-awesome"></i>
+          <h2>Web Development</h2>
+          <p>Full stack development of web based works</p>
+          <a href="#">Learn More</a>
+        </div>
+        <div>
+          <i class="fa-solid fa-code"></i>
+          <h2>App Development</h2>
+          <p>Any type of mobile app development work</p>
+          <a href="#">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- portfolio -->
+  <div id="portfolio">
+    <div class="container">
+      <h1 class="subtitle">My Works</h1>
+
+      <div class="worklist">
+        <div class="work">
+          <img src="images/work1.jpg" />
+          <div class="layeres">
+            <h1>Machine learning and PCB design</h1>
+            <p>
+              Perform the machine learning and printed cricuit board related
+              wors
+            </p>
+            <a href="#"><i class="fa-solid fa-link"></i> </a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="images/work2.jpg" />
+          <div class="layeres">
+            <h1>Wireless Back office engineer</h1>
+            <p>
+              Control all the BSC Related work and configuration of the sites
+              and systems
+            </p>
+            <a href="#"><i class="fa-solid fa-link"></i> </a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="images/work3.jpg" />
+          <div class="layeres">
+            <h1>Content creation and writing</h1>
+            <p>
+              Imagine a content of any topic and write blogs,essay and other
+              required written work of specific topic
+            </p>
+            <a href="#"><i class="fa-solid fa-link"></i> </a>
+          </div>
+        </div>
+      </div>
+
+      <a href="#" class="btn-container" aria-disabled="true">
+        <button class="btn" disabled >See More</button>
+      </a>
+    </div>
+  </div>
+  <!-- contact details -->
+  <div id="contact">
+    <div class="container">
+      <div class="row contact-row">
+        <div class="column-left">
+          <h1 class="subtitle" style="margin-top: 20px;">Contact Me</h1>
+         <a href="mailto:dahalhimal321@gmail.com"> <p><i class="fa-solid fa-envelope"></i> dahalhimal321@gmail.com</p></a>
+          <a href="tel:+9779816851025"><p><i class="fa-solid fa-phone"></i>+977 9816851025</p></a>
+          <div class="social-icons">
+            <a href="https://www.linkedin.com/in/himal-dahal-623036189/" target="_blank"> <i
+                class="fa-brands fa-linkedin"></i> LinkedIn</a>
+            <a href="https://www.instagram.com/himal_3dahal/" target="_blank"><i class="fa-brands fa-instagram"></i>
+              Instagram</a>
+            <a href="https://www.facebook.com/himal.dahal.321" target="_blank"><i class="fa-brands fa-facebook"></i>
+              Facebook</a>
+
+          </div>
+          <a href="images/Himal_Dahal_CV1.pdf" download class="btn-downloadcv">
+            <button class="btn" style="margin-top: 10px !important;">Download CV</button>
+          </a>
+        </div>
+        <div class="column-right">
+          <form>
+            <input type="text" name="Name" placeholder="Your Name" required>
+            <input type="text" name="Email" placeholder="Your Email" required>
+            <textarea type="text" name="Message" placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>Copyright@ Himal Dahal</p>
+    </div>
+  </div>
+
+  <script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-content");
+
+    function opentab(tabname) {
+      for (tablink of tablinks) {
+        tablink.classList.remove("active-link");
+      }
+      for (tabcontent of tabcontents) {
+        tabcontent.classList.remove("active-element");
+      }
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-element");
+    }
+  </script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var navbar = document.querySelector('.navbar');
+
+      window.addEventListener('scroll', function () {
+        if (window.scrollY > 0) {
+          navbar.classList.add('scrolled');
+        } else {
+          navbar.classList.remove('scrolled');
+        }
+      });
+    });
+
+    var sidemenu = document.getElementById("side-menu")
+    function openmenu() {
+      sidemenu.style.right = "0"
+
+    }
+    function closemenu() {
+      sidemenu.style.right = "-130px"
+
+    }
+
+  </script>
+</body>
+
+</html>
